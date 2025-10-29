@@ -170,6 +170,13 @@ body {
     color: var(--primary);
 }
 
+.transparency h4 {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--text-light);
+}
+
 .transparency p {
     margin-bottom: 16px;
     color: var(--text-dim);
