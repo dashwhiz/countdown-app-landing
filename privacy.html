@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Countdown App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .policy {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .policy h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            color: var(--text-light);
+        }
+        .policy .last-updated {
+            color: var(--text-dim);
+            margin-bottom: 32px;
+        }
+        .policy h2 {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+        .policy p {
+            margin-bottom: 16px;
+            color: var(--text-dim);
+            line-height: 1.8;
+        }
+        .policy ul {
+            margin: 16px 0 24px 20px;
+            color: var(--text-dim);
+        }
+        .policy li {
+            margin-bottom: 8px;
+        }
+        .policy strong {
+            color: var(--text-light);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="policy">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <h1>Privacy Policy</h1>
+        <p class="last-updated"><strong>Last updated:</strong> October 29, 2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>Countdown ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application and web services.</p>
+
+        <h2>2. Information We Do NOT Collect</h2>
+        <p>We believe in radical transparency. Here's what we <strong>do NOT</strong> collect:</p>
+        <ul>
+            <li>Personal information (name, email, phone number)</li>
+            <li>Device identifiers or advertising IDs</li>
+            <li>Location data</li>
+            <li>Photos or media files</li>
+            <li>Contacts or calendar data</li>
+            <li>Browsing history or search history</li>
+            <li>Any data from third-party apps</li>
+        </ul>
+
+        <h2>3. How the App Works</h2>
+        <h3>Local Storage (Mobile App)</h3>
+        <p>All countdown events you create are stored <strong>locally on your device</strong> using Hive database. This data:</p>
+        <ul>
+            <li>Never leaves your device unless you explicitly share an event</li>
+            <li>Is not backed up to our servers</li>
+            <li>Is completely under your control</li>
+            <li>Can be deleted at any time by uninstalling the app</li>
+        </ul>
+
+        <h2>4. Shared Countdowns</h2>
+        <p>When you choose to share a countdown by generating a public link, we store the following on our servers (powered by Appwrite):</p>
+        <ul>
+            <li><strong>Event title</strong> - The name you gave your countdown</li>
+            <li><strong>Target date</strong> - When the countdown ends</li>
+            <li><strong>Emoji & color</strong> - Your chosen customization</li>
+            <li><strong>Share link ID</strong> - A randomly generated 12-character identifier</li>
+            <li><strong>Reaction count</strong> - Anonymous counter of hearts received</li>
+        </ul>
+        <p><strong>Important:</strong> Sharing is completely optional. You can use the app without ever sharing a countdown.</p>
+
+        <h2>5. Reactions & IP Hashing</h2>
+        <p>When someone reacts to a shared countdown:</p>
+        <ul>
+            <li>We collect their IP address temporarily to prevent spam (rate limiting)</li>
+            <li>IP addresses are immediately one-way hashed using SHA-256 with a salt</li>
+            <li>We store only the hash, never the actual IP address</li>
+            <li>The hash cannot be reversed to reveal the original IP</li>
+            <li>Hashes are used solely to enforce: <strong>1 reaction per hour per person</strong></li>
+            <li>No cookies, tracking pixels, or analytics scripts are used</li>
+        </ul>
+
+        <h2>6. Third-Party Services</h2>
+        <p>We use the following third-party service:</p>
+        <ul>
+            <li><strong>Appwrite</strong> - Open-source backend platform for storing shared countdown data
+                <ul>
+                    <li>Hosted in Frankfurt, Germany (EU data residency)</li>
+                    <li>All data transmitted via HTTPS encryption</li>
+                    <li>Appwrite's privacy policy: <a href="https://appwrite.io/privacy" style="color: var(--primary);">https://appwrite.io/privacy</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>7. Data Retention</h2>
+        <ul>
+            <li><strong>Shared countdowns:</strong> Stored indefinitely until you delete the original event in your app</li>
+            <li><strong>Reaction hashes:</strong> Stored for 1 hour, then automatically eligible for cleanup</li>
+            <li><strong>Local data:</strong> Stored on your device until you delete the app</li>
+        </ul>
+
+        <h2>8. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li><strong>Delete your data:</strong> Delete any shared countdown from within the app</li>
+            <li><strong>Access your data:</strong> All local data is accessible on your device</li>
+            <li><strong>Export your data:</strong> Take screenshots or manually copy your countdown details</li>
+            <li><strong>Opt out of sharing:</strong> Simply don't use the share feature</li>
+        </ul>
+
+        <h2>9. Children's Privacy</h2>
+        <p>Our app does not knowingly collect information from children under 13 years of age. The app does not require any personal information to function.</p>
+
+        <h2>10. App Store & Google Play</h2>
+        <p>When you download the app from App Store or Google Play:</p>
+        <ul>
+            <li>Apple/Google may collect download and usage statistics</li>
+            <li>We do not receive any personal information from these platforms</li>
+            <li>Refer to Apple's and Google's privacy policies for their data practices</li>
+        </ul>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+        <ul>
+            <li>Posting the new Privacy Policy on this page</li>
+            <li>Updating the "Last updated" date</li>
+        </ul>
+        <p>Continued use of the app after changes indicates acceptance of the updated policy.</p>
+
+        <h2>12. Data Security</h2>
+        <p>We implement appropriate security measures:</p>
+        <ul>
+            <li>All data in transit is encrypted via HTTPS</li>
+            <li>Appwrite backend uses industry-standard security practices</li>
+            <li>IP addresses are one-way hashed and never stored in plain text</li>
+            <li>No user accounts means no password breaches</li>
+        </ul>
+
+        <h2>13. International Users</h2>
+        <p>Our app is available globally. Shared countdown data is stored in the EU (Frankfurt, Germany) via Appwrite. By using the share feature, you consent to this data transfer.</p>
+
+        <h2>14. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:dashwhiz@gmail.com" style="color: var(--primary);">dashwhiz@gmail.com</a></li>
+        </ul>
+
+        <h2>15. Summary</h2>
+        <p><strong>TL;DR:</strong> We collect almost nothing. Your countdowns stay on your device. If you share one, only the event details (title, date, emoji) go to our servers. We hash IPs to prevent spam but never store them. No tracking, no ads, no nonsense.</p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid var(--bg-dark-alt);">
+
+        <p style="text-align: center; color: var(--text-dim);">© 2025 dashwhiz. All rights reserved.</p>
+    </div>
+</body>
+</html>
