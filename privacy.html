@@ -92,9 +92,11 @@
             <li><strong>Target date</strong> - When the countdown ends</li>
             <li><strong>Emoji & color</strong> - Your chosen customization</li>
             <li><strong>Share link ID</strong> - A randomly generated 12-character identifier</li>
+            <li><strong>Deletion token</strong> - A secret 36-character UUID stored only on your device that proves you own this data</li>
             <li><strong>Reaction count</strong> - Anonymous counter of hearts received</li>
         </ul>
         <p><strong>Important:</strong> Sharing is completely optional. You can use the app without ever sharing a countdown.</p>
+        <p><strong>You're in control:</strong> The deletion token ensures only you can delete your shared data. It never leaves your device and cannot be accessed by viewers of your shared countdown.</p>
 
         <h2>5. Reactions & IP Hashing</h2>
         <p>When someone reacts to a shared countdown:</p>
@@ -121,18 +123,21 @@
 
         <h2>7. Data Retention</h2>
         <ul>
-            <li><strong>Shared countdowns:</strong> Stored indefinitely until you delete the original event in your app</li>
-            <li><strong>Reaction hashes:</strong> Stored for 1 hour, then automatically eligible for cleanup</li>
-            <li><strong>Local data:</strong> Stored on your device until you delete the app</li>
+            <li><strong>Shared countdowns:</strong> Stored indefinitely until you delete them. You can delete individual countdowns or use "Delete My Shared Data" in the app menu to remove all your shared countdowns at once.</li>
+            <li><strong>Reaction data:</strong> When you delete a shared countdown, all associated reactions are also permanently deleted from our servers.</li>
+            <li><strong>Reaction hashes:</strong> Stored temporarily for rate limiting, eligible for cleanup after the rate limit period expires.</li>
+            <li><strong>Local data:</strong> Stored on your device until you delete the app or clear app data. Deleting shared data from servers does not delete your local countdowns.</li>
         </ul>
 
         <h2>8. Your Rights</h2>
-        <p>You have the right to:</p>
+        <p>You have full control over your data:</p>
         <ul>
-            <li><strong>Delete your data:</strong> Delete any shared countdown from within the app</li>
-            <li><strong>Access your data:</strong> All local data is accessible on your device</li>
+            <li><strong>Delete individual shared countdowns:</strong> Delete any countdown from the app to also remove it from our servers</li>
+            <li><strong>Delete all shared data:</strong> Use "Delete My Shared Data" in the app menu to permanently remove all your shared countdowns and reactions from our servers in one action</li>
+            <li><strong>Access your data:</strong> All local data is accessible on your device. Shared data is visible via the public links you created</li>
             <li><strong>Export your data:</strong> Take screenshots or manually copy your countdown details</li>
-            <li><strong>Opt out of sharing:</strong> Simply don't use the share feature</li>
+            <li><strong>Opt out of sharing:</strong> Simply don't use the share feature - the app works fully offline</li>
+            <li><strong>No authentication barriers:</strong> You don't need to log in or verify your identity to delete your data - the deletion token stored on your device proves ownership</li>
         </ul>
 
         <h2>9. Children's Privacy</h2>
@@ -173,7 +178,7 @@
         </ul>
 
         <h2>15. Summary</h2>
-        <p><strong>TL;DR:</strong> We collect almost nothing. Your countdowns stay on your device. If you share one, only the event details (title, date, emoji) go to our servers. We hash IPs to prevent spam but never store them. No tracking, no ads, no nonsense.</p>
+        <p><strong>TL;DR:</strong> We collect almost nothing. Your countdowns stay on your device. If you share one, only the event details (title, date, emoji) go to our servers. You can delete your shared data anytime with one tap. We hash IPs to prevent spam but never store them. No tracking, no ads, no authentication required, no nonsense. You're always in control.</p>
 
         <hr style="margin: 40px 0; border: none; border-top: 1px solid var(--bg-dark-alt);">
 
